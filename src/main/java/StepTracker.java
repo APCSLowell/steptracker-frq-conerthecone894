@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 public class StepTracker
 {
- private int days, active;
+    private int days, active;
     private ArrayList<Integer> steps = new ArrayList<Integer>();
 
     public StepTracker(int a){
@@ -28,13 +28,11 @@ public class StepTracker
 
     public double averageSteps(){
         int s = 0;
-        int d = 0;
 
         for(int i = 0; i < steps.size(); i++){
             s += steps.get(i);
-            d++;
         }
 
-        return s/d;
+        return s/days;
     }
 } 
