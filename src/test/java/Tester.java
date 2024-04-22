@@ -15,7 +15,7 @@ public class Tester {
    public void partA () {
       StepTracker tr = new StepTracker(10000);
       assertEquals(0,tr.activeDays());
-      assertEquals(0,tr.averageSteps(),0.01);
+      assertEquals(0,tr.averageSteps(),0.0); //originally 0.1 for some reason??? the instructions says this should check for 0.0 instead
       tr.addDailySteps(9000);
       tr.addDailySteps(5000);
       assertEquals(0,tr.activeDays());
